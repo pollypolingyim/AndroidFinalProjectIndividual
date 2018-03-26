@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidFinalProject</string>
+    <string name="mc_title">Quiz</string>
+    <string name="prompt_text">Enter text here</string>
+    <string name="t">TRUE</string>
+    <string name="f">FALSE</string>
+    <string name="prompt_decimal">Enter number here</string>
+</resources>
