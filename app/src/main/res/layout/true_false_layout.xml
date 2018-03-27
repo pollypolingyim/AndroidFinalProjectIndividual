@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/answer_line"
-    android:layout_width="fill_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <RadioButton
-        android:id="@+id/radio_t"
+    <Button
+        android:id="@+id/buttonT"
+        style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onChoiceClicked"
-        android:text="@string/t" />
+        android:layout_weight="1"
+        android:onClick="clickTrue"
+        android:text="@string/true_choice" />
 
-    <RadioButton
-        android:id="@+id/radio_f"
+    <Button
+        android:id="@+id/buttonF"
+        style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onChoiceClicked"
-        android:text="@string/f" />
-
-
-</RadioGroup>
-
-
+        android:layout_weight="1"
+        android:onClick="clickFalse"
+        android:text="@string/false_choice" />
+</LinearLayout>

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<EditText xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/answer_line"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_layout"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:ems="10"
-    android:hint="@string/prompt_text"
-    android:inputType="text"
-    android:singleLine="true">
-
-</EditText>
+    android:orientation="vertical">
 
 
-
-
+    <EditText
+        android:id="@+id/input_text_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/text_input" />
+</LinearLayout>

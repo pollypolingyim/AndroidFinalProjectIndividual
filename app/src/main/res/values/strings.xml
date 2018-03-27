@@ -5,4 +5,9 @@
     <string name="t">TRUE</string>
     <string name="f">FALSE</string>
     <string name="prompt_decimal">Enter number here</string>
+    <string name="true">true</string>
+    <string name="false">false</string>
+    <string name="true_choice">true</string>
+    <string name="false_choice">false</string>
+    <string name="text_input">type your answer here</string>
 </resources>

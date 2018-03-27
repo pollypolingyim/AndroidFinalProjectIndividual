@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/answer_line"
-    android:layout_width="fill_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-    <RadioButton
-        android:id="@+id/radio_a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onChoiceClicked"
-        android:text="A" />
 
-    <RadioButton
-        android:id="@+id/radio_b"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onChoiceClicked"
-        android:text="B" />
+        android:onClick="clickA"
+        android:text="Button" />
 
-    <RadioButton
-        android:id="@+id/radio_c"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onChoiceClicked"
-        android:text="C" />
+        android:onClick="clickB"
+        android:text="Button" />
 
-    <RadioButton
-        android:id="@+id/radio_d"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onChoiceClicked"
-        android:text="D" />
-</RadioGroup>
+        android:onClick="clickC"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickD"
+        android:text="Button" />
+</LinearLayout>
