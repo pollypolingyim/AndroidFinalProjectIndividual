@@ -11,7 +11,7 @@ import android.util.Log;
  */
 
 public class MCDatabaseHelper extends SQLiteOpenHelper {
-    static final String DATABASE_NAME = "MessagesDb.db"; //database name
+    static final String DATABASE_NAME = "Quiz.db"; //database name
     static final int VERSION_NUM = 1; //database version
     static final String KEY_ID = "ID"; //column name, primary key
     static final String KEY_QUESTION = "QuestionCol"; //column name
@@ -20,12 +20,10 @@ public class MCDatabaseHelper extends SQLiteOpenHelper {
     static final String KEY_CHOICE_C = "ChoiceCCol";
     static final String KEY_CHOICE_D = "ChoiceDCol";
     static final String KEY_CORRECT_CHOICE = "CorrChoiceCol";
-    static final String KEY_CORRECT_TF = "CorrTFCol";
-    static final String KEY_USER_TEXT_INPUT = "UserTextInputCol";
-    static final String KEY_CORRECT_ANS_TEXT = "CorrTextCol";
-    static final String KEY_USER_NUM_INPUT = "UserNumInputCol";
-    static final String KEY_CORRECT_ANS_NUM = "CorrNumCol";
-    static final String TB_NAME = "MCTable"; //table name
+    static final String KEY_ANSWER_TF = "CorrAnsTFCol";
+    static final String KEY_ANSWER_NUMERIC = "CorrAnsNumCol";
+    static final String KEY_ACCURACY = "AccuracyCol";
+    static final String TB_NAME = "QuizTable"; //table name
 
     public MCDatabaseHelper(Context ctx) {
         super(ctx, DATABASE_NAME, null, VERSION_NUM);
@@ -43,11 +41,9 @@ public class MCDatabaseHelper extends SQLiteOpenHelper {
                 + KEY_CHOICE_C + " TEXT,"
                 + KEY_CHOICE_D + " TEXT,"
                 + KEY_CORRECT_CHOICE + " TEXT,"
-                + KEY_CORRECT_TF + " TEXT, "
-                + KEY_USER_TEXT_INPUT + " TEXT,"
-                + KEY_CORRECT_ANS_TEXT + "TEXT,"
-                + KEY_USER_NUM_INPUT + "REAL,"
-                + KEY_CORRECT_ANS_NUM + " REAL);";
+                + KEY_ANSWER_TF + " TEXT, "
+                + KEY_ANSWER_NUMERIC + " REAL,"
+                + KEY_ACCURACY + " REAL);";
         db.execSQL(CREATE_TABLE);
     }
 

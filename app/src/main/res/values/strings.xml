@@ -8,4 +8,7 @@
     <string name="true_choice">true</string>
     <string name="false_choice">false</string>
     <string name="text_input">type your answer here</string>
+    <string name="addQuestion">Add</string>
+    <string name="NewQuestion">New question</string>
+    <string name="delete">delete</string>
 </resources>
