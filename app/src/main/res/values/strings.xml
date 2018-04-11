@@ -1,14 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AndroidFinalProject</string>
-    <string name="mc_title">Quiz</string>
-    <string name="prompt_text">Enter text here</string>
-    <string name="t">TRUE</string>
-    <string name="f">FALSE</string>
-    <string name="prompt_decimal">Enter number here</string>
-    <string name="true_choice">true</string>
-    <string name="false_choice">false</string>
-    <string name="text_input">type your answer here</string>
-    <string name="addQuestion">Add</string>
-    <string name="NewQuestion">New question</string>
-    <string name="delete">delete</string>
+
+    <string name="app_name">AndroidStudents</string>
+    <string name="add_student">Add Student</string>
+    <string name="update_student">Update Student</string>
+    <string name="name">Student Name</string>
+    <string name="gpa">GPA</string>
+    <string name="update">Update</string>
+    <string name="add">Add</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+
 </resources>
