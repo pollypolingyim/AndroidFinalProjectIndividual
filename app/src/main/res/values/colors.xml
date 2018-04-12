@@ -6,4 +6,7 @@
     <color name="transparent">#00000000</color>
     <color name="list_item_bg">#ffffff</color>
     <color name="view_divider_color">#BABABA</color>
+    <color name="moccasin">#ffe4b5</color>
+    <color name="yellow">#ffff00</color>
+    <color name="ivory">#fffff0</color>
 </resources>

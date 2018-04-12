@@ -10,5 +10,16 @@
     <string name="add">Add</string>
     <string name="reset">Reset</string>
     <string name="cancel">Cancel</string>
+    <string name="info">info</string>
+    <string name="summary">summary</string>
+    <string name="studentList">enter</string>
+    <string name="welcome">Welcome to my student list app</string>
+    <string name="exit">exit</string>
+    <string name="help_menu">On the home page, click \"enter\" to view the student list.\n\n
+    On the student list page, click the plus sign on the upper right corner to add a student.\n\n
+    On the student list page, tap on a student to view the details of a student.\n\n
+    On the student list page, long press on a student to delete the student. \n\n
+    On the home page, click \"summary\" to view the summary statistics of the students.\n\n
+    v1.0 by Polly Yim</string>
 
 </resources>
