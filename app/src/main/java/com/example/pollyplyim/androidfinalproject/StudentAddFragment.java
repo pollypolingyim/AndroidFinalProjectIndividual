@@ -61,8 +61,8 @@ public class StudentAddFragment extends Fragment implements OnClickListener {
 
     @Override
     public void onResume() {
-        getActivity().setTitle(R.string.add_student);
-        getActivity().getActionBar().setTitle(R.string.add_student);
+        //getActivity().setTitle(R.string.add_student);
+        //getActivity().getActionBar().setTitle(R.string.add_student);
         super.onResume();
     }
 

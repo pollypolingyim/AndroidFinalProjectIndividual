@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidStudents</string>
+    <string name="add_student">加學生</string>
+    <string name="update_student">改學生</string>
+    <string name="name">學生名</string>
+    <string name="gpa">分數</string>
+    <string name="update">更新</string>
+    <string name="add">加</string>
+    <string name="reset">清除</string>
+    <string name="cancel">取消</string>
+    <string name="info">使用資料</string>
+    <string name="summary">總結</string>
+    <string name="studentList">進入</string>
+    <string name="welcome">歡迎來到我的學生手機程</string>
+    <string name="exit">退出</string>
+    <string name="help_menu">在主頁, 按輸入可以看學生列表
+    在學生列表, 右上角有個加號可以加學生
+    在學生列表, 點一項可以看該學生資料
+    在學生列表, 長按可以刪去學生
+    在主頁, 按總結可以看數據資料
+    v1.0 by Polly Yim</string>
+
+</resources>

@@ -4,14 +4,14 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends FragmentActivity implements
+public class MainActivity extends AppCompatActivity implements
         CustomStudentDialogFragment.StudentDialogFragmentListener {
 
     private Fragment contentFragment;
@@ -102,7 +102,6 @@ public class MainActivity extends FragmentActivity implements
     protected void setFragmentTitle(int resourseId) {
         setTitle(resourseId);
 //       getActionBar().setTitle(resourseId);
-
 
     }
 

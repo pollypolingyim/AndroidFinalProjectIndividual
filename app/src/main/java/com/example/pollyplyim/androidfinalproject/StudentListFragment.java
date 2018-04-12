@@ -15,6 +15,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.support.design.widget.Snackbar;
 
 
 
@@ -89,6 +90,8 @@ public class StudentListFragment extends Fragment implements OnItemClickListener
         // Use AsyncTask to delete from database
         studentDAO.delete(student);
         studentListAdapter.remove(student);
+        Snackbar.make(view, "Student deleted", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show();
         return true;
     }
 
