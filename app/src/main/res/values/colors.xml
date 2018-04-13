@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#deb887</color>
+    <color name="colorPrimaryDark">#cdaf95</color>
     <color name="colorAccent">#FF4081</color>
     <color name="transparent">#00000000</color>
     <color name="list_item_bg">#ffffff</color>
     <color name="view_divider_color">#BABABA</color>
-    <color name="moccasin">#ffe4b5</color>
-    <color name="yellow">#ffff00</color>
-    <color name="ivory">#fffff0</color>
+    <color name="home_background">#ffe4b5</color>
 </resources>

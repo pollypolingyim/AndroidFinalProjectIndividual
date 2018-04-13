@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
 
-        builder.setMessage("Do You Want To Quit?");
+        builder.setMessage(getResources().getString(R.string.quit_question));
         builder.setPositiveButton(android.R.string.yes,
                 new DialogInterface.OnClickListener() {
                     @Override

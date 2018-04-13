@@ -26,7 +26,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 public class StartPage extends AppCompatActivity {
     final Context context = this;
     private StudentDAO studentDAO;
-    private LoadStudentTask task;
     ProgressDialog pDialog;
     NodeList studentlist;
 
@@ -35,8 +34,16 @@ public class StartPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start_page);
         studentDAO = new StudentDAO(this);
-        String urlString = "http://www.algonquinstudents.ca/~yim00008/android/students.xml";
-        new LoadStudentTask().execute(urlString);
+
+        boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("isFirstRun", true);
+        if (isFirstRun) {
+            String urlString = "http://www.algonquinstudents.ca/~yim00008/android/students.xml";
+            new LoadStudentTask().execute(urlString);
+        }
+
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                .putBoolean("isFirstRun", false).commit();
 
         Button buttonEnter = (Button) findViewById(R.id.student_list_button);
         buttonEnter.setOnClickListener(new View.OnClickListener() {
@@ -51,8 +58,8 @@ public class StartPage extends AppCompatActivity {
         buttonSummary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent intent = new Intent(StartActivity.this, MessageListActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(StartPage.this, Summary.class);
+                startActivity(intent);
             }
         });
 

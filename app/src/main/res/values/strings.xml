@@ -21,5 +21,15 @@
     On the student list page, long press on a student to delete the student. \n\n
     On the home page, click \"summary\" to view the summary statistics of the students.\n\n
     v1.0 by Polly Yim</string>
+    <string name="highest_name">Highest GPA student\'s name:</string>
+    <string name="highest_gpa">Highest GPA:</string>
+    <string name="lowest_student_name">Lowest GPA student\'s name:</string>
+    <string name="lowest_gpa">Lowest GPA:</string>
+    <string name="num_students">Number of students:</string>
+    <string name="average_gpa">Average GPA:</string>
+    <string name="quit_question">Do you want to quit?</string>
+    <string name="saved_message">Student saved</string>
+    <string name="deleted_message">Student deleted</string>
+    <string name="no_student_message">No student record</string>
 
 </resources>

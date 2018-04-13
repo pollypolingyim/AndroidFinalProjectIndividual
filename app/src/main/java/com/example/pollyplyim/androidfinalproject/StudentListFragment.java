@@ -90,7 +90,7 @@ public class StudentListFragment extends Fragment implements OnItemClickListener
         // Use AsyncTask to delete from database
         studentDAO.delete(student);
         studentListAdapter.remove(student);
-        Snackbar.make(view, "Student deleted", Snackbar.LENGTH_LONG)
+        Snackbar.make(view, getResources().getString(R.string.deleted_message), Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show();
         return true;
     }
@@ -119,7 +119,7 @@ public class StudentListFragment extends Fragment implements OnItemClickListener
                                 studentList);
                         studentListView.setAdapter(studentListAdapter);
                     } else {
-                        Toast.makeText(activity, "No Student Records",
+                        Toast.makeText(activity, getResources().getString(R.string.no_student_message),
                                 Toast.LENGTH_LONG).show();
                     }
                 }

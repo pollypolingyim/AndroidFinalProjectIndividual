@@ -106,7 +106,7 @@ public class StudentAddFragment extends Fragment implements OnClickListener {
             if (activityWeakRef.get() != null
                     && !activityWeakRef.get().isFinishing()) {
                 if (result != -1)
-                    Toast.makeText(activityWeakRef.get(), "Student Saved",
+                    Toast.makeText(activityWeakRef.get(), getResources().getString(R.string.saved_message),
                             Toast.LENGTH_LONG).show();
             }
         }

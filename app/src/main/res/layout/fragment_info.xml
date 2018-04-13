@@ -6,15 +6,14 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp" >
+        android:layout_margin="5dp">
 
 
-        <EditText
+        <TextView
             android:id="@+id/etxt_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textMultiLine"
             android:text="@string/help_menu" />
 
 
@@ -22,9 +21,8 @@
             android:id="@+id/button_exit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/etxt_info"
             android:text="@string/exit" />
-
 
 
     </RelativeLayout>

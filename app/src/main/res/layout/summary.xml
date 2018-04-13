@@ -1,0 +1,143 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/highest_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_column="1"
+            android:text="@string/highest_name" />
+
+        <TextView
+            android:id="@+id/highest_student_name_actual"
+            android:paddingStart="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/highest_gpa"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="@string/highest_gpa" />
+
+        <TextView
+            android:id="@+id/highest_gpa_actual"
+            android:paddingStart="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lowest_student_name"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="@string/lowest_student_name" />
+
+        <TextView
+            android:id="@+id/lowest_student_name_actual"
+            android:paddingStart="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lowest_gpa"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="@string/lowest_gpa" />
+
+        <TextView
+            android:id="@+id/lowest_gpa_actual"
+            android:paddingStart="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1" />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/num_students"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="@string/num_students" />
+
+        <TextView
+            android:id="@+id/num_students_actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:paddingStart="6dp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/avg_gpa"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="@string/average_gpa" />
+
+        <TextView
+            android:id="@+id/avg_gpa_actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:paddingStart="6dp" />
+
+    </TableRow>
+
+
+
+
+</TableLayout>
