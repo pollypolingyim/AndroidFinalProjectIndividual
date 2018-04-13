@@ -22,20 +22,20 @@ public class Summary extends AppCompatActivity {
         numStudents =(TextView)findViewById(R.id.num_students_actual);
         numStudents.setText(studentDao.studentCount()+"");
 
-        avgGpa = (TextView)findViewById(R.id.num_students_actual);
-        avgGpa.setText(studentDao.avgGpa()+"");
+        avgGpa = (TextView)findViewById(R.id.avg_gpa_actual);
+        avgGpa.setText(studentDao.avgGpa());
 
         highestGpaStudentName = (TextView)findViewById(R.id.highest_student_name_actual);
         highestGpaStudentName.setText(studentDao.getHighestGpaStudent());
 
         highestGpa = (TextView)findViewById(R.id.highest_gpa_actual);
-        highestGpa.setText(studentDao.getHighestGpa()+ "");
+        highestGpa.setText(studentDao.getHighestGpa());
 
         lowestGpaStudentName = (TextView)findViewById(R.id.lowest_student_name_actual);
         lowestGpaStudentName.setText(studentDao.getLowestGpaStudent());
 
         lowestGpa = (TextView)findViewById(R.id.lowest_gpa_actual);
-        lowestGpa.setText(studentDao.getLowestGpa()+"");
+        lowestGpa.setText(studentDao.getLowestGpa());
 
     }
 }

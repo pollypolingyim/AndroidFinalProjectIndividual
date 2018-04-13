@@ -42,21 +42,20 @@ public class StudentDAO extends StudentDBDAO {
                 new String[] { student.getId() + "" });
     }
 
-    public double avgGpa(){
+    public String avgGpa(){
         String sql = "SELECT AVG (" + DataBaseHelper.STUDENT_GPA +") as AVG FROM "+DataBaseHelper.STUDENT_TABLE;
         double result = 0;
         Cursor cursor = database.rawQuery(sql, null);
         if(cursor.moveToFirst()){
             result = cursor.getDouble(0);
         }
-        DecimalFormat df=new DecimalFormat("0.##");
-        df.format(result);
         cursor.close();
-        return result;
+        DecimalFormat df=new DecimalFormat("0.##");
+        return df.format(result);
     }
 
     public int studentCount(){
-        String sql = "SELECT SUM(*) FROM "+DataBaseHelper.STUDENT_TABLE;
+        String sql = "SELECT COUNT(*) FROM "+DataBaseHelper.STUDENT_TABLE;
         Cursor cursor = database.rawQuery(sql, null);
         int result = 0;
         if(cursor.moveToFirst()){
@@ -69,7 +68,7 @@ public class StudentDAO extends StudentDBDAO {
     public String getHighestGpaStudent(){
         String sql = "SELECT "+DataBaseHelper.NAME_COLUMN + " FROM "+ DataBaseHelper.STUDENT_TABLE
                 + " WHERE " + DataBaseHelper.STUDENT_GPA+ " = (SELECT MAX(" + DataBaseHelper.STUDENT_GPA
-                + ") FROM " + DataBaseHelper.STUDENT_TABLE;
+                + ") FROM " + DataBaseHelper.STUDENT_TABLE + ")";
         Cursor cursor = database.rawQuery(sql, null);
         String result = "";
         if(cursor.moveToFirst()){
@@ -79,21 +78,22 @@ public class StudentDAO extends StudentDBDAO {
         return result;
     }
 
-    public double getHighestGpa(){
-        String sql = "SELECT MAX(*) FROM "+DataBaseHelper.STUDENT_TABLE;
+    public String getHighestGpa(){
+        String sql = "SELECT MAX( " + DataBaseHelper.STUDENT_GPA + " ) FROM " + DataBaseHelper.STUDENT_TABLE;
         Cursor cursor = database.rawQuery(sql, null);
         double result = 0;
         if(cursor.moveToFirst()){
             result = cursor.getDouble(0);
         }
         cursor.close();
-        return result;
+        DecimalFormat df=new DecimalFormat("0.##");
+        return df.format(result);
     }
 
     public String getLowestGpaStudent(){
         String sql = "SELECT "+DataBaseHelper.NAME_COLUMN + " FROM "+ DataBaseHelper.STUDENT_TABLE
                 + " WHERE " + DataBaseHelper.STUDENT_GPA+ " = (SELECT MIN(" + DataBaseHelper.STUDENT_GPA
-                + ") FROM " + DataBaseHelper.STUDENT_TABLE;
+                + ") FROM " + DataBaseHelper.STUDENT_TABLE + ")";
         Cursor cursor = database.rawQuery(sql, null);
         String result = "";
         if(cursor.moveToFirst()){
@@ -103,15 +103,16 @@ public class StudentDAO extends StudentDBDAO {
         return result;
     }
 
-    public double getLowestGpa(){
-        String sql = "SELECT MIN(*) FROM "+DataBaseHelper.STUDENT_TABLE;
+    public String getLowestGpa(){
+        String sql = "SELECT MIN( " + DataBaseHelper.STUDENT_GPA + " ) FROM " + DataBaseHelper.STUDENT_TABLE;
         Cursor cursor = database.rawQuery(sql, null);
         double result = 0;
         if(cursor.moveToFirst()){
             result = cursor.getDouble(0);
         }
+        DecimalFormat df=new DecimalFormat("0.##");
         cursor.close();
-        return result;
+        return df.format(result);
     }
 
     public ArrayList<Student> getStudents() {
